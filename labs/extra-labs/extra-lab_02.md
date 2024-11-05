@@ -191,9 +191,3 @@ This script is custom made and is for creating, removing and modifying a file.
 ```
 
 5) If you are confortable in coding with powershell, you may adapt the script and change it to see results on the distant host.
-
-### Delegation
-
-We will change the 
-
-1) 
