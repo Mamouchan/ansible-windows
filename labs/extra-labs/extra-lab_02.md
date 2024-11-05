@@ -116,7 +116,7 @@ To apply jinja filters inside the `{{ oscarng_versions }}` variable you will use
 
 1) Create a library/module directory at your project root
    
-2) Copy/Paste the following powershell script :
+2) Copy/Paste the following powershell script to the new library/module directory and call it win_custom_module.ps1 :
 
 ```ps1
 #!powershell
@@ -154,7 +154,7 @@ if("present" -eq $state)
     }
     else
     {
-        New-Item -Path $path -ItemType "file" -Value $content
+        New-Item -Path $path -ItemType "file" -Value $content -Force
         $result.created = $true
     }
 }
@@ -175,7 +175,7 @@ This script is custom made and is for creating, removing and modifying a file.
 
 3) Update your ansible.cfg file and add `library = ./library/modules` under the `[default]` group if not already done
 
-4) Call the script in a playbook or role as you would with any other built-in modules
+4) Call the script in a playbook or role as you would with any other built-in modules.
 
 ```yml
 ---
