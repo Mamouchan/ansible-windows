@@ -46,7 +46,7 @@ ansible-galaxy collection install azure.azcollection --force
 Install dependencies required by the collection:
 
 ```bash
-pip install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements-azure.txt
+pip install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt
 ```
 
 ## Create new role using Molecule
@@ -54,7 +54,7 @@ pip install -r ~/.ansible/collections/ansible_collections/azure/azcollection/req
 ```bash
 cd roles
 
-molecule init role mycompany.lab06 --driver-name azure
+molecule init scenario mycompany.lab06 --driver-name azure
 ```
 
 ## Update Molecule configuraiton
