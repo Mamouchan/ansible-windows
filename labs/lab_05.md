@@ -273,6 +273,7 @@ Example:
   ansible.windows.win_uri:
     url: "{{ teams_webhook_url }}"
     method: POST
+    body_format: json
     body:
       type: AdaptiveCard
       text: "{{ ansible_date_time.date }}: index.html has been updated on {{ ansible_host }}"
@@ -288,12 +289,14 @@ Example:
   notify: "Send Teams notification"
 ```
 
+:warning: To detect a change the taks you are applying the handler on must actually perform a change (file modification, etc )
+
 5) On the task `Set fact on running services`, update the filter to sort the list of windows services randomly, using the filter `shuffle`:
 
 ```yml
 - name: Set fact on running services
   ansible.builtin.set_fact:
-    running_services: "{{ service_info.services | shuffle | selectattr('state', 'equalto', 'started') | list }}"
+    my_local_services: "{{ service_info.services | shuffle | selectattr('state', 'equalto', 'started') | list }}"
 ```
 
 5) Run your playbook and open the url http://<VM_IP>:8080 on your browser: You will see the list of services on your VM.

@@ -2,6 +2,9 @@
 
 We will change the handlers created in lab05 and adapt it to run it locally instead of using the distant host.
 
+:warning: Delegatin to localhost means the target OS switch from Windows (distant Host) to Linux (WSL2).
+Do not forget to adapt modules and collections accordingly
+
 1) Add `delegate_to: localhost` and custom vars under the handler as shown here
 
 ```yml

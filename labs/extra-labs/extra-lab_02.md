@@ -93,7 +93,7 @@ For the next steps you can use this page as reference :
 - https://jinja.palletsprojects.com/en/3.0.x/templates/#list-of-builtin-filters
 - https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_loops.html#complex-loops
 
-This oscarng_versions variable is a complex list (basically a list containing multipe similar objects).
+This oscarng_versions variable is a list of complex objects.
 To display the variable inside the ansible controller you can use the builtin debug module as below :
 
 ```yml

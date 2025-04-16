@@ -81,7 +81,6 @@ ansible_winrm_transport: ntlm
 ansible_winrm_scheme: https
 ansible_winrm_port: 22
 ansible_winrm_server_cert_validation: ignore
-ansible_shell_type: powershell
 EOF
 ```
 

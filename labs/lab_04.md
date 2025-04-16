@@ -95,4 +95,5 @@ ansible-playbook --vault-password-file=.vault_pass deploy.yml -i inventories/dev
 - Create a user `MyUser` within the group `MyGroup`
 - Delete the user `MyUser`
 - Delete the group `MyGroup`
-- Install security update with reboot
+- Install security update without reboot
+- Perform a windows reboot separately from the security updates
