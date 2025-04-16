@@ -4,11 +4,11 @@
 ```yml
 users:
   - name: mytempuser01
-    password: Mytemppassword01
+    password: Mytemppassword01+
   - name: mytempuser02
-    password: Mytemppassword02
+    password: Mytemppassword02+
   - name: mytempuser03
-    password: Mytemppassword03
+    password: Mytemppassword03+
 ```
 2) Create all the users in the list with only one tasks, refer to this documentation : 
    https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_loops.html#iterating-over-a-simple-list
@@ -19,25 +19,25 @@ users:
 ```yml
 users:
   - name: mytempuser01
-    password: Mytemppassword01
+    password: Mytemppassword01+
     groups:
       - users
       - administrators
   - name: mytempuser02
-    password: Mytemppassword02
+    password: Mytemppassword02+
     groups:
       - users
       - administrators
   - name: mytempuser03
-    password: Mytemppassword03
+    password: Mytemppassword03+
     groups:
       - users
       - administrators
 ```
    
-5) Rename the loop variable to a custom one (named user for example) and refactor the necessary tasks
+5) Rename the iteration loop variable (by default it is named item) to a custom one (named user for example) and refactor the necessary tasks after it
    
-6) Adapt the loop to call a new set of tasks (using include_tasks), and do both user and group creation into this new file.
+6) Adapt the loop to call a new set of tasks (using include_tasks to call a new file with a loop on it), and do both user and group creation into this new file.
 
 ### Tags management
 

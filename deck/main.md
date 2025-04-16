@@ -221,7 +221,7 @@ my_second_variable_name: "my_second_variable_value {{ my_variable_name }}"
 ### Secret Management with Ansible Vault
 
 - To deal with sensitive data such as passwords, tokens, certificats..., we have to use the cli `Ansible-vault` to encrypt them.
-- The enrypted data can be distributed or placed in `source control` (gitlab, tfs, ...).
+- The encrypted data can be distributed or placed in `source control` (gitlab, tfs, ...).
 
 ---
 
@@ -326,7 +326,7 @@ Live DEMO
 ---
 
 - With Ansible Collections, you can use ansible playbooks/roles created and maintained by the community.
-- Example: Microsoft provides an ansible collection [`azure.azcollection`](https://github.com/ansible-collections/azure) that allows to provisionne and configure Azure ressources using Ansible
+- Example: Microsoft provides an ansible collection [`azure.azcollection`](https://github.com/ansible-collections/azure) that allows to build and configure Azure ressources using Ansible
 
 ---
 

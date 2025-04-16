@@ -10,6 +10,13 @@
 
 > Open a WSL terminal
 
+Check ansible version:
+
+```bash
+ansible --version
+```
+If the command works properly no need to do the following steps.
+
 Check if ansible and pywinrm are installed:
 
 ```bash
@@ -21,12 +28,6 @@ If not, install them
 ```bash
 pip install ansible
 pip install "pywinrm>=0.3.0"
-```
-
-Check ansible version:
-
-```bash
-ansible --version
 ```
 
 Now you can use ansible on your Windows environment :clap:

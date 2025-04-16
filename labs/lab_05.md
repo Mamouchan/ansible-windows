@@ -51,7 +51,7 @@ When IIS is installed, open the ip of your VM: You will see the defaut page of I
 
 ```yml
 - name: "Change default website index.html"
-  ansible.builtin.win_copy:
+  ansible.windows.win_copy:
     src: index.html
     dest: "C:\\inetpub\\wwwroot\\index.html"
 ```

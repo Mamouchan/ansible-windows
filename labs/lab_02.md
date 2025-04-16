@@ -5,12 +5,13 @@
 - Create a Windows Server 2022 VM
 - Configure Winrm on the VM (We will use port 22 instead of 5986 for winrm)
 
-## Instructions
+## Instructions (Wait for the instructor on this part)
 
 1) Go to https://portal.azure.com and follow the trainer's instructions to create a new Windows VM
 
 2) Enable Winrm on the VM: Files to download on the VM
 
+Go to: 
 - https://raw.githubusercontent.com/Mamouchan/ansible-windows/tree/main/labs/tools/winrm/ConfigureWinRM.ps1
 - https://raw.githubusercontent.com/Mamouchan/ansible-windows/tree/main/labs/tools/winrm/makecert.exe
 
